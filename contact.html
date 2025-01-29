@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact Me - Aditya's Portfolio</title>
+    <link rel="icon" href="Image/engineer.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="container-fluid body_section">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand brand-name" href="index.html">Aditya Sahu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="skill.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link headerachor active" href="contact.html">Contact Me</a>
+                    </li>
+                    <li>
+                        <iframe id="toggle-iframe" onload="onIframeLoad()" src="toggle.html"></iframe>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>I'd love to hear from you! Whether you have a question or just want to say hi, feel free to drop me a message.</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/your-username" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/your-handle" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">Made with ❤️ by Aditya Sahu</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="contact.js"></script>
+    <script src="dark-mode.js"></script>
+    <!-- Add AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+      });
+    </script>
+</body>
+</html>

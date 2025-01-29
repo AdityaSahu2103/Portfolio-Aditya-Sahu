@@ -1,0 +1,99 @@
+:root {
+    --dark-background-color: #171c28;
+    --dark-text-color: #ffffff;
+    --dark-button-color: #55198b;
+  }
+  
+  iframe {
+    border: none;
+    width: 92px;
+    height: 65px;
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+      align-items: center;
+    }
+  }
+  
+  .dark-mode {
+    background-color: var(--dark-background-color) !important;
+    background-image: var(--dark-background-color) !important;
+    color: var(--dark-text-color) !important;
+  }
+  
+  .dark-mode .card-title {
+    color: var(--dark-text-color);
+  }
+  
+  .dark-mode .card {
+    background-color: var(--dark-background-color);
+  }
+  
+  .dark-mode .column1 {
+    background-image: var(--dark-background-color) !important;
+  }
+  
+  .dark-mode .nav-link {
+    color: var(--dark-text-color) !important;
+  }
+  
+  .dark-mode .headerachor:hover {
+    background-color: var(--dark-button-color) !important;
+  }
+  
+  .dark-mode .brand-name {
+    color: var(--dark-text-color) !important;
+  }
+  
+  .dark-mode .brand-name:hover {
+    color: var(--dark-button-color) !important;
+  }
+  
+  .dark-mode p {
+    color: #fffff0 !important;
+  }
+  /* Dark mode styles using multiple possible dark mode class patterns */
+[data-theme="dark"] .brand-name,
+[data-theme="dark"] .navbar-light .navbar-brand,
+.dark-mode .brand-name,
+.dark-mode .navbar-light .navbar-brand,
+.dark .brand-name,
+.dark .navbar-light .navbar-brand {
+  background-color: #1a1a1a;
+  border-color: #2d2d2d;
+  color: #ffffff !important; /* Force white color in dark mode */
+}
+
+[data-theme="dark"] .brand-name::before,
+[data-theme="dark"] .navbar-light .navbar-brand::before,
+[data-theme="dark"] .brand-name::after,
+[data-theme="dark"] .navbar-light .navbar-brand::after,
+.dark-mode .brand-name::before,
+.dark-mode .navbar-light .navbar-brand::before,
+.dark-mode .brand-name::after,
+.dark-mode .navbar-light .navbar-brand::after,
+.dark .brand-name::before,
+.dark .navbar-light .navbar-brand::before,
+.dark .brand-name::after,
+.dark .navbar-light .navbar-brand::after {
+  color: #a78bfa;
+  opacity: 0.8;
+}
+
+[data-theme="dark"] .brand-name:hover,
+[data-theme="dark"] .navbar-light .navbar-brand:hover,
+.dark-mode .brand-name:hover,
+.dark-mode .navbar-light .navbar-brand:hover,
+.dark .brand-name:hover,
+.dark .navbar-light .navbar-brand:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Ensure navbar background is also dark */
+[data-theme="dark"] .navbar,
+.dark-mode .navbar,
+.dark .navbar {
+  background-color: #121212 !important;
+}
+
