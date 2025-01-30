@@ -5,31 +5,30 @@ const projectsData = {
         tags: ['HTML','CSS', 'JavaScript', 'React.js', 'Firebase', 'Stripe', "Vercel"],
         description: '                  We developed a National Web Community for Philatelists, providing a centralized platform to address the challenges faced by stamp collectors across India. This solution enhances the philatelic experience by bridging gaps in access to information, demand fulfillment, and networking opportunities.',
         features: [
-            'Real-time face detection and recognition',
-            'Automated attendance marking',
-            'User-friendly interface for managing student records',
-            'Export attendance reports in various formats',
-            'High accuracy in recognition even with varying lighting conditions'
+            'Centralized Platform: Connects philatelic collectors with postal circles across India.',
+            'Seamless Buying Experience: Enables easy access to philatelic materials through an intuitive interface.',
+            'Community Engagement: Encourages collaboration among collectors and postal authorities.'
+            
         ],
         technologies: [
-            'Python for backend development',
-            'OpenCV for image processing and face detection',
-            'dlib for facial landmark detection',
-            'face_recognition library for face recognition',
-            'CSV for data storage and management'
+            'Web Development: Frontend with React.js and backend with Node.js & Express.js.',
+            'Database Management: FireBase for efficient data storage and retrieval.penCV for image processing and face detection',
+            'Authentication & Security: Implemented OAuth 2.0 / JWT for secure user access.dlib for facial landmark detection',
+            'API Integration: Integration with India Post’s services for real-time updates.'
+            
         ],
         challenges: [
-            'Implementing accurate face recognition in different lighting conditions',
-            'Optimizing performance for real-time processing',
-            'Handling multiple faces in a single frame',
-            'Creating an efficient data storage system'
+            'Lack of Centralized Data: Created a structured database to organize philatelic materials efficiently.Implementing accurate face recognition in different lighting conditions',
+            'Scalability Concerns: Designed a modular architecture to support future expansion.ptimizing performance for real-time processing',
+            'User Accessibility & Experience: Built an intuitive UI/UX with responsive design for smooth navigation.ling multiple faces in a single frame',
+            'Ensuring Trust & Authenticity: Implemented verification mechanisms to validate listings and transactions.ing an efficient data storage system'
         ],
-        github: 'https://github.com/AjitVerma15/Advance-Attendence-System',
+        github: 'https://github.com/AdityaSahu2103/RetroPhil-24',
         demo: '#', // Add demo link if available
         images: [
-            'Image/Ajit.jpg',
-            'https://www.bing.com/images/search?q=photos%20of%20stamps%20for%20landing%20page&FORM=IQFRBA&id=1F0D2F87A2B2B7048436B2A82BAE2387C4369544',
-            'https://www.bing.com/images/search?q=photos%20of%20stamps%20for%20landing%20page&FORM=IQFRBA&id=1F0D2F87A2B2B7048436B2A82BAE2387C4369544'
+            'https://media.licdn.com/dms/image/v2/D4D22AQGDVM_GZ0unNA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1728151628688?e=1741219200&v=beta&t=EP1JPJePCbxCN3qh3TSJhUotcw82bVJ9ZtcwxmLCJos',
+            'https://media.licdn.com/dms/image/v2/D4D22AQELyuwISpIT-w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1728151637827?e=1741219200&v=beta&t=DAqauUrImOce_NMZeZXCQIFO2zRhPP0zm7ICcZe-T8s',
+            'https://media.licdn.com/dms/image/v2/D4D22AQGsG-4EpHBlZg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1728151629952?e=1741219200&v=beta&t=K-iHnLP-p-bpvjxrCjta9t6dZB987dWYqDt_BHYhb_8'
         ]
     },
     'telegram-bot': {
@@ -79,6 +78,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                 </div>
                 <p class="project-description">${project.description}</p>
+            </div>
+
+            <div class="project-images">
+                ${project.images.map(image => `
+                    <a href="${image}" data-lightbox="project-gallery">
+                        <img src="${image}" alt="${project.title} screenshot">
+                    </a>
+                `).join('')}
             </div>
 
             <div class="project-section">
